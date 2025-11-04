@@ -26,7 +26,7 @@ class UserController extends Controller
 
     public function logout(){
         auth()->logout();
-        return redirect('/');
+        return redirect('/'); // Redirect to home page after logout
     }
 
     public function login(Request $request){
